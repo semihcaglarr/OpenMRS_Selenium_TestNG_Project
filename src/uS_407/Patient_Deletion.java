@@ -1,4 +1,4 @@
-package uS_407;
+package US_407;
 
 import Utility.BaseDriver;
 import Utility.Tools;
@@ -9,7 +9,7 @@ import org.testng.annotations.Test;
 public class Patient_Deletion extends BaseDriver {  // Semih
 
 
-    @Test(groups = {"smoke test"})
+    @Test
     public void TC_0701() {
         Elements_407 tc07 = new Elements_407();
         Tools.Wait(3);

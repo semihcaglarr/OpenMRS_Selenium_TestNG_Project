@@ -1,4 +1,4 @@
-package uS_407;
+package US_407;
 
 import Utility.BaseDriver;
 import org.openqa.selenium.WebElement;
