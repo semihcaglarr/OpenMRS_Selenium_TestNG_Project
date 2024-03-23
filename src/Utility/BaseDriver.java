@@ -8,6 +8,7 @@ import org.openqa.selenium.support.ui.WebDriverWait;
 import org.testng.Assert;
 import org.testng.annotations.AfterClass;
 import org.testng.annotations.BeforeClass;
+import org.testng.asserts.SoftAssert;
 
 import java.time.Duration;
 
@@ -34,6 +35,8 @@ public class BaseDriver {
     }
 
     public void US_402_Login() {
+
+        SoftAssert _softAssert = new SoftAssert();
         Elements_402 ble = new Elements_402();
 
         driver.get("https://openmrs.org/");
@@ -74,7 +77,8 @@ public class BaseDriver {
 
         wait.until(ExpectedConditions.visibilityOf(ble.loggedMsg));
 
-        Assert.assertTrue(ble.loggedMsg.getText().contains("Logged"), "Unable to Login");
+        _softAssert.assertTrue(ble.loggedMsg.getText().contains("Logged"), "Unable to Login");
+        _softAssert.assertAll();
     }
 
 
