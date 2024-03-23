@@ -10,10 +10,10 @@
             </run>
         </groups> -->
         <!--çalışcak classların yazıldığı bölüm-->
-        <classes>
-            <class name="US_407.Patient_Deletion"></class>
-        </classes>
-
+        <!--<classes>-->
+        <!--   <class name="US_407.Patient_Deletion"></class>-->
+       <!--</classes>-->
+        <!--çalışcak classların yazıldığı bölüm-->
 
     </test>
 </suite>
