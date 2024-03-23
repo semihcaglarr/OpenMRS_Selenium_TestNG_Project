@@ -34,6 +34,5 @@ public class Patient_Deletion extends BaseDriver {  // Semih
 
         tc07.deleteConfirm.click();
 
-
     }
 }

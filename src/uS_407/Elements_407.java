@@ -115,5 +115,4 @@ public class Elements_407 {
 //    @FindBy(xpath = "//div[@class='float-sm-right']/span/font/font")
 //    public WebElement patientIdText;
 
-
 }
