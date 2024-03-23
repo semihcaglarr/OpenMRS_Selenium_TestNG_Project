@@ -86,5 +86,29 @@ public class Elements_406 {
     @FindBy(xpath = "//ul[@id='breadcrumbs']//a")
     public WebElement homePageIcon; // bu element oluşana kadar bekle diyeceğiz
 
+    @FindBy(xpath = "//form[@id='patient-search-form']/input")
+    public WebElement patientSearch; // buraya ID göndermeliyiz
+
+
+    @FindBy(xpath = "//div[@class='dataTables_info']")
+    public WebElement dataTableInfo;  // buradaki text "1 a 1 of 1" bu içerene
+    // contains olana kadar bekle
+
+
+    @FindBy(xpath = "//tr[@class='odd']")
+    public WebElement resultsTable;  // buna tıkla
+
+
+    @FindBy(xpath = "//a[contains(@id,'deletePatient')]")
+    public WebElement deletePatient; // buna istinaden bekleme de koy
+
+
+    @FindBy(xpath = "//input[@id='delete-reason']")
+    public WebElement deleteReason;
+
+
+    @FindBy(xpath = "//input[@id='delete-reason']/..//button[@class='confirm right']")
+    public WebElement deleteConfirm;
+
 
 }
