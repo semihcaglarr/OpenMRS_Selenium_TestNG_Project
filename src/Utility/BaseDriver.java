@@ -77,7 +77,7 @@ public class BaseDriver {
 
         wait.until(ExpectedConditions.visibilityOf(ble.loggedMsg));
 
-        _softAssert.assertTrue(ble.loggedMsg.getText().contains("Logged"), "Unable to Login");
+        _softAssert.assertTrue(ble.loggedMsg.getText().contains("Inpatient Ward"), "Unable to Login");
         _softAssert.assertAll();
     }
 

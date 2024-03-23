@@ -34,5 +34,9 @@ public class Tools {
         return foundIn;
     }
 
+    public static int randomGenerator(int limit) {
+        return (int) (Math.random() * limit);
+    }
+
 
 }
