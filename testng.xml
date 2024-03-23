@@ -11,7 +11,7 @@
         </groups> -->
         <!--çalışcak classların yazıldığı bölüm-->
         <classes>
-            <class name="uS_407.Patient_Deletion"></class>
+            <class name="US_407.Patient_Deletion"></class>
         </classes>
 
 
