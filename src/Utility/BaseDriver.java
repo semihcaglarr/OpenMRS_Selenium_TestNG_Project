@@ -33,11 +33,11 @@ public class BaseDriver {
 
         wait = new WebDriverWait(driver, Duration.ofSeconds(25));
 
-        US_402_Login();
+        LoginProcesses();
 
     }
 
-    public void US_402_Login() {
+    public void LoginProcesses() {
 
         SoftAssert _softAssert = new SoftAssert();
         LCE lce = new LCE();
