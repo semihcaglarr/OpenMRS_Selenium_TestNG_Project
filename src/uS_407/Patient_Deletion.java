@@ -17,11 +17,11 @@ public class Patient_Deletion extends BaseDriver {  // Semih
 
         wait.until(ExpectedConditions.elementToBeClickable(tc07.homePageIcon));
 
-        tc07.patientSearch.sendKeys("100K9P");
+        tc07.patientSearch.sendKeys("100KAM");
 
         wait.until(ExpectedConditions.visibilityOf(tc07.dataTableInfo));
 
-        Assert.assertTrue(tc07.patientId.getText().contains("100K9P"), "No Patient with this Information was Found");
+        Assert.assertTrue(tc07.patientId.getText().contains("100KAM"), "No Patient with this Information was Found");
 
         tc07.resultsTable.click();
 
