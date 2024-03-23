@@ -39,7 +39,8 @@ public class BaseDriverErm {
         WebElement exploreButton = driver.findElement(By.xpath("//a[contains(@href,'#openmrs2')]/span/span"));
         exploreButton.click();
 
-        WebElement demoMRSButton = driver.findElement(By.xpath("//a[contains(@href,'openmrs/login')]/span/span"));
+        WebElement demoMRSButton = driver.findElement(By.xpath("//a[contains(@href,'openmrs/login.htm')]/span/span"));
+        Tools.Wait(3);
         demoMRSButton.click();
 
         wait.until(ExpectedConditions.urlContains("login"));
