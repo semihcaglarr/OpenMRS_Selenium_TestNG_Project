@@ -7,6 +7,8 @@ import org.testng.annotations.AfterClass;
 import org.testng.annotations.BeforeClass;
 
 import java.time.Duration;
+import java.util.logging.Level;
+import java.util.logging.Logger;
 
 public class GWD {
 
@@ -16,6 +18,10 @@ public class GWD {
 
     @BeforeClass
     public void initialisationProcess() {
+
+        Logger logger = Logger.getLogger("");
+        logger.setLevel(Level.SEVERE);
+
         driver1 = new ChromeDriver();
 
         driver1.manage().window().maximize();

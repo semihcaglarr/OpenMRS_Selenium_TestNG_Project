@@ -1,7 +1,7 @@
-package US_407;
+package uS_407;
 
 import Utility.BaseDriver;
-import org.openqa.selenium.support.ui.ExpectedCondition;
+import Utility.Tools;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.testng.Assert;
 import org.testng.annotations.Test;
@@ -9,9 +9,10 @@ import org.testng.annotations.Test;
 public class Patient_Deletion extends BaseDriver {  // Semih
 
 
-    @Test
+    @Test(groups = {"smoke test"})
     public void TC_0701() {
         Elements_407 tc07 = new Elements_407();
+        Tools.Wait(3);
 
         tc07.findPatientRecordButton.click();
 

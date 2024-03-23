@@ -1,16 +1,16 @@
 package Utility;
 
-import US_402.Elements_402;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
-import org.testng.Assert;
 import org.testng.annotations.AfterClass;
 import org.testng.annotations.BeforeClass;
 import org.testng.asserts.SoftAssert;
 
 import java.time.Duration;
+import java.util.logging.Level;
+import java.util.logging.Logger;
 
 public class BaseDriver {
 
@@ -21,6 +21,9 @@ public class BaseDriver {
 
     @BeforeClass
     public void startUpOperations() {
+
+        Logger logger = Logger.getLogger("");
+        logger.setLevel(Level.SEVERE);
 
         driver = new ChromeDriver();
 
@@ -37,47 +40,47 @@ public class BaseDriver {
     public void US_402_Login() {
 
         SoftAssert _softAssert = new SoftAssert();
-        Elements_402 ble = new Elements_402();
+        LCE lce = new LCE();
 
         driver.get("https://openmrs.org/");
 
-        ble.demoButton.click();
+        lce.demoButton.click();
 
-        wait.until(ExpectedConditions.elementToBeClickable(ble.selectLanguage));
+        wait.until(ExpectedConditions.elementToBeClickable(lce.selectLanguage));
 
-        if (!(ble.flagImg.getAttribute("alt").equals("en"))) {
-            System.out.println("Language : " + ble.flagImg.getAttribute("alt"));
+        if (!(lce.flagImg.getAttribute("alt").equals("en"))) {
+            System.out.println("Language : " + lce.flagImg.getAttribute("alt"));
 
-            ble.selectLanguage.click();
+            lce.selectLanguage.click();
 
-            wait.until(ExpectedConditions.elementToBeClickable(ble.choiceLanguage));
+            wait.until(ExpectedConditions.elementToBeClickable(lce.choiceLanguage));
 
-            ble.choiceLanguage.click();
+            lce.choiceLanguage.click();
 
-            System.out.println("Language : " + ble.flagImg.getAttribute("alt"));
+            System.out.println("Language : " + lce.flagImg.getAttribute("alt"));
         }
 
-        wait.until(ExpectedConditions.visibilityOf(ble.exploreMRS2Button));
+        wait.until(ExpectedConditions.visibilityOf(lce.exploreMRS2Button));
 
-        Tools.JavaScriptClick(ble.exploreMRS2Button);
+        Tools.JavaScriptClick(lce.exploreMRS2Button);
 
-        wait.until(ExpectedConditions.elementToBeClickable(ble.demoMRS2Button));
+        wait.until(ExpectedConditions.elementToBeClickable(lce.demoMRS2Button));
 
-        Tools.JavaScriptClick(ble.demoMRS2Button);
+        Tools.JavaScriptClick(lce.demoMRS2Button);
 
         wait.until(ExpectedConditions.urlContains("login"));
 
-        ble.userName.sendKeys("admin");
+        lce.userName.sendKeys("admin");
 
-        ble.password.sendKeys("Admin123");
+        lce.password.sendKeys("Admin123");
 
-        ble.inpatientWard.click();
+        lce.inpatientWard.click();
 
-        ble.loginButton.click();
+        lce.loginButton.click();
 
-        wait.until(ExpectedConditions.visibilityOf(ble.loggedMsg));
+        wait.until(ExpectedConditions.visibilityOf(lce.loggedMsg));
 
-        _softAssert.assertTrue(ble.loggedMsg.getText().contains("Inpatient Ward"), "Unable to Login");
+        _softAssert.assertTrue(lce.loggedMsg.getText().contains("Inpatient Ward"), "Unable to Login");
         _softAssert.assertAll();
     }
 

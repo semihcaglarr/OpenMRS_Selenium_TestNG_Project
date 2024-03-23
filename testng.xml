@@ -1,0 +1,19 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+
+<suite name="my suit">
+    <test name="smokes test">
+
+        <!-- hangi gruplar çalıştırılacak-->
+        <!-- hangi gruplar çalıştırılacak<groups>
+            <run>
+                <include name="smoke test"></include>
+            </run>
+        </groups> -->
+        <!--çalışcak classların yazıldığı bölüm-->
+        <classes>
+            <class name="uS_407.Patient_Deletion"></class>
+        </classes>
+
+
+    </test>
+</suite>
