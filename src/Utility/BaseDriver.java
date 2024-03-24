@@ -74,13 +74,14 @@ public class BaseDriver {
 
         lce.password.sendKeys("Admin123");
 
-        lce.inpatientWard.click();
+        int random = Tools.randomGenerator(lce.sessionLocation.size());
+        lce.sessionLocation.get(random).click();
 
         lce.loginButton.click();
 
         wait.until(ExpectedConditions.visibilityOf(lce.loggedMsg));
 
-        _softAssert.assertTrue(lce.loggedMsg.getText().contains("Inpatient Ward"), "Unable to Login");
+        _softAssert.assertTrue(lce.loggedMsg.getText().contains("Logged"), "Unable to Login");
         _softAssert.assertAll();
     }
 
