@@ -23,23 +23,18 @@ public class My_Account extends BaseDriver { // Serik
 
         tc05.myAccountButton.click();
 
-        // Password
-        //Languages
         for (WebElement e : tc05.tasks) {
             if (e.getText().contains("Password") || e.getText().contains("Languages")) {
                 System.out.println(e.getText().trim() + " visible");
             }
         }
 
-        for (WebElement e: tc05.buttonApp){
-            e.click();
+        for (int i = 0; i < tc05.buttonApp.size(); i++) {
+            tc05.buttonApp.get(i).click();
             wait.until(ExpectedConditions.elementToBeClickable(tc05.cancelButton));
-
             tc05.cancelButton.click();
             wait.until(ExpectedConditions.visibilityOfAllElements(tc05.buttonApp));
-
         }
-
     }
 
 }
