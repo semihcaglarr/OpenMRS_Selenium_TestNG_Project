@@ -18,7 +18,6 @@ public class BaseDriver {
 
     public static WebDriverWait wait;
 
-
     @BeforeClass
     public void startUpOperations() {
 
@@ -34,7 +33,6 @@ public class BaseDriver {
         wait = new WebDriverWait(driver, Duration.ofSeconds(25));
 
         LoginProcesses();
-
     }
 
     public void LoginProcesses() {
@@ -93,4 +91,5 @@ public class BaseDriver {
         driver.quit();
 
     }
+
 }

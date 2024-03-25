@@ -21,6 +21,11 @@ public class Tools {
         jse.executeScript("arguments[0].click();", element);
     }
 
+    public static void JSC(WebElement element) {
+        JavascriptExecutor jse = (JavascriptExecutor) GWD.driver1;
+        jse.executeScript("arguments[0].click();", element);
+    }
+
 
     public static boolean ListContainsString(List<WebElement> list, String wordToSearch) {
 
