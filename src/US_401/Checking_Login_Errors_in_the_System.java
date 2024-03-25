@@ -1,21 +1,18 @@
 package US_401;
 
 import US_402.Elements_402;
-import US_402.Elements_402_Tuba;
-import Utility.BaseDriver;
 import Utility.GWD;
 import Utility.Tools;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.testng.Assert;
 import org.testng.annotations.DataProvider;
 import org.testng.annotations.Test;
-import org.testng.asserts.SoftAssert;
 
 public class Checking_Login_Errors_in_the_System extends GWD{ //Tuba
 
     @Test(dataProvider = "database")
     public void TC_0101(String username,String password){
-        Elements_402_Tuba ble = new Elements_402_Tuba();
+        Elements_402 ble = new Elements_402 ();
         Tools.Wait(3);
 
         driver1.get("https://openmrs.org/");
