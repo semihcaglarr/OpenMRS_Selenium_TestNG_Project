@@ -116,7 +116,6 @@ public class Perform_Login_in_the_System extends GWD { // Tuba
 
         Assert.assertTrue(ble.loggedMsg.getText().contains("Logged"), "Unable to Login");
 
-
     }
 
 
