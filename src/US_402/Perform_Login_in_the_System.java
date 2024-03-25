@@ -72,7 +72,7 @@ public class Perform_Login_in_the_System extends GWD { // Tuba
 
     @Test(priority = 2)
     public void TC_0201() {
-        Elements_402_Tuba ble = new Elements_402_Tuba();
+        Elements_402 ble = new Elements_402();
         Tools.Wait(3);
 
         driver1.get("https://openmrs.org/");
