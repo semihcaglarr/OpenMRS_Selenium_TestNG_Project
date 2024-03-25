@@ -26,7 +26,6 @@ public class Tools {
         jse.executeScript("arguments[0].click();", element);
     }
 
-
     public static boolean ListContainsString(List<WebElement> list, String wordToSearch) {
 
         boolean foundIn = false;
