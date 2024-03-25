@@ -42,6 +42,4 @@ public class Tools {
     public static int randomGenerator(int limit) {
         return (int) (Math.random() * limit);
     }
-
-
 }
