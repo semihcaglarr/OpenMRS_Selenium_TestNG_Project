@@ -23,7 +23,7 @@ public class Perform_Logout_from_the_System extends BaseDriver { // Sudaba
         wait.until(ExpectedConditions.urlContains("login"));
 
         String url=driver.getCurrentUrl();
-        Assert.assertTrue(url.contains("login"),"Loginpage could not be reached ");
+        Assert.assertTrue(url.contains("login"),"Loginpage could not be reached. ");
 
 
 
