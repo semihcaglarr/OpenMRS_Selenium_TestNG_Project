@@ -1,4 +1,4 @@
-package uS_407;
+package US_407;
 
 import Utility.BaseDriver;
 import org.openqa.selenium.WebElement;
@@ -114,6 +114,4 @@ public class Elements_407 {
 //
 //    @FindBy(xpath = "//div[@class='float-sm-right']/span/font/font")
 //    public WebElement patientIdText;
-
-
 }

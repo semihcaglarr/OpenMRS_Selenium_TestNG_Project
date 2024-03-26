@@ -1,6 +1,5 @@
 package US_408;
 
-import US_407.Elements_407;
 import Utility.BaseDriver;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.testng.Assert;

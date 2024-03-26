@@ -4,55 +4,117 @@ import Utility.GWD;
 import Utility.Tools;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.testng.Assert;
+import org.testng.annotations.DataProvider;
 import org.testng.annotations.Test;
 
 
 public class Perform_Login_in_the_System extends GWD { // Tuba
-
-    @Test
-    public void TC_0201() {
-        Elements_402 ble1 = new Elements_402();
+    @Test(dataProvider = "database",priority = 1)
+    public void TC_201_Negativ(String username,String password){
+        Elements_402 ble = new Elements_402();
         Tools.Wait(3);
 
         driver1.get("https://openmrs.org/");
-        Tools.Wait(2);
+        ble.demoButton.click();
 
-        wait1.until(ExpectedConditions.elementToBeClickable(ble1.flagImg));
+        wait1.until(ExpectedConditions.elementToBeClickable(ble.selectLanguage));
 
-        if (!(ble1.flagImg.getAttribute("alt").equals("en"))) {
-            System.out.println(ble1.flagImg.getAttribute("alt"));
+        if (!(ble.flagImg.getAttribute("alt").equals("en"))) {
+            System.out.println("Language : " + ble.flagImg.getAttribute("alt"));
 
-            ble1.selectLanguage.click();
+            ble.selectLanguage.click();
 
-            wait1.until(ExpectedConditions.elementToBeClickable(ble1.choiceLanguage));
+            wait1.until(ExpectedConditions.elementToBeClickable(ble.choiceLanguage));
 
-            ble1.choiceLanguage.click();
+            ble.choiceLanguage.click();
+
+            System.out.println("Language : " + ble.flagImg.getAttribute("alt"));
         }
 
-        Tools.JavaScriptClick(ble1.demoButton);
+        wait1.until(ExpectedConditions.elementToBeClickable(ble.exploreMRS2Button));
 
-        wait1.until(ExpectedConditions.visibilityOf(ble1.exploreMRS2Button));
+        ble.exploreMRS2Button.click();
+        //Tools.JavaScriptClick(ble.exploreMRS2Button);
+        Tools.Wait(2);
 
-        Tools.JavaScriptClick(ble1.exploreMRS2Button);
-
-        wait1.until(ExpectedConditions.elementToBeClickable(ble1.demoMRS2Button));
-
-        Tools.JavaScriptClick(ble1.demoMRS2Button);
+        wait1.until(ExpectedConditions.elementToBeClickable(ble.demoMRS2Button));
+        ble.demoMRS2Button.click();
+        //Tools.JavaScriptClick_TUBA(ble.demoMRS2Button);
 
         wait1.until(ExpectedConditions.urlContains("login"));
 
-        ble1.userName.sendKeys("admin");
+        ble.userName.sendKeys(username);
 
-        ble1.password.sendKeys("Admin123");
+        ble.password.sendKeys(password);
 
-        ble1.inpatientWard.click();
+        ble.inpatientWard.click();
 
-        ble1.loginButton.click();
+        ble.loginButton.click();
 
-        wait1.until(ExpectedConditions.visibilityOf(ble1.loggedMsg));
+        wait1.until(ExpectedConditions.visibilityOf(ble.usernameerrormsg));
+        Assert.assertTrue(ble.usernameerrormsg.getText().contains("Invalid"),"Unable to Login");
 
-        Assert.assertTrue(ble1.loggedMsg.getText().contains("Logged"), "Unable to Login");
+    }
+    @DataProvider
+    Object[][] database(){
+        Object[][] usernamePassword=
+                {
+                        {"tuba","1234"},
+                        {"seda","44444"},
+                        {"Ayse","6666"},
+                        {"suna","9999"},
+                        {"mine","dddd"},
+                        {"dede","kkkk"}
 
+                };
+        return  usernamePassword;
+    }
+
+    @Test(priority = 2)
+    public void TC_0201() {
+        Elements_402 ble = new Elements_402();
+        Tools.Wait(3);
+
+        driver1.get("https://openmrs.org/");
+        ble.demoButton.click();
+
+        wait1.until(ExpectedConditions.elementToBeClickable(ble.selectLanguage));
+
+        if (!(ble.flagImg.getAttribute("alt").equals("en"))) {
+            System.out.println("Language : " + ble.flagImg.getAttribute("alt"));
+
+            ble.selectLanguage.click();
+
+            wait1.until(ExpectedConditions.elementToBeClickable(ble.choiceLanguage));
+
+            ble.choiceLanguage.click();
+
+            System.out.println("Language : " + ble.flagImg.getAttribute("alt"));
+        }
+
+        wait1.until(ExpectedConditions.elementToBeClickable(ble.exploreMRS2Button));
+
+        ble.exploreMRS2Button.click();
+        //Tools.JavaScriptClick(ble.exploreMRS2Button);
+        Tools.Wait(2);
+
+        wait1.until(ExpectedConditions.elementToBeClickable(ble.demoMRS2Button));
+        ble.demoMRS2Button.click();
+        //Tools.JavaScriptClick_TUBA(ble.demoMRS2Button);
+
+        wait1.until(ExpectedConditions.urlContains("login"));
+
+        ble.userName.sendKeys("admin");
+
+        ble.password.sendKeys("Admin123");
+
+        ble.inpatientWard.click();
+
+        ble.loginButton.click();
+
+        wait1.until(ExpectedConditions.visibilityOf(ble.loggedMsg));
+
+        Assert.assertTrue(ble.loggedMsg.getText().contains("Logged"), "Unable to Login");
 
     }
 
