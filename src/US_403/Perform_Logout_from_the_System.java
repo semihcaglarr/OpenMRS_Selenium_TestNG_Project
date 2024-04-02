@@ -7,9 +7,9 @@ import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.testng.Assert;
 import org.testng.annotations.Test;
 
-public class Perform_Logout_from_the_System extends BaseDriver { // Sudaba
+public class Perform_Logout_from_the_System extends BaseDriver {
 
-    @Test
+    @Test(groups = {"Smoke Test","Logout Test"})
     public void TC_0301(){
 
         Tools.Wait(3);

@@ -6,7 +6,7 @@ import org.testng.annotations.Test;
 public class Patient_Search_in_Patient_List extends BaseDriver {  // Demet
 
 
-    @Test
+    @Test(groups = {"PatientManagement Test"})
     public void TC_0601(){
 
 

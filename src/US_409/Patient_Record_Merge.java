@@ -11,8 +11,8 @@ import org.testng.annotations.Test;
 
 import java.util.UUID;
 
-public class Patient_Record_Merge extends BaseDriver { // Erman
-     @Test
+public class Patient_Record_Merge extends BaseDriver {
+     @Test(groups = {"Regression Test","PatientManagement Test"})
      public void TC_0901(){
           Elements409 elements = new Elements409();
 

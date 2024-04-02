@@ -8,8 +8,8 @@ import org.testng.annotations.DataProvider;
 import org.testng.annotations.Test;
 
 
-public class Perform_Login_in_the_System extends GWD { // Tuba
-    @Test(dataProvider = "database",priority = 1)
+public class Perform_Login_in_the_System extends GWD {
+    @Test(dataProvider = "database",priority = 1,groups = {"Smoke Test","Login Test"})
     public void TC_201_Negativ(String username,String password){
         Elements_402 ble = new Elements_402();
         Tools.Wait(3);

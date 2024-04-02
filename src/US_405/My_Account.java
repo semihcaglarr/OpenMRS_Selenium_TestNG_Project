@@ -10,10 +10,10 @@ import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.testng.annotations.Test;
 import org.testng.asserts.SoftAssert;
 
-public class My_Account extends BaseDriver { // Serik
+public class My_Account extends BaseDriver {
 
 
-    @Test
+    @Test(groups = {"Smoke Test"})
     public void TC_0501() {
 
         Actions driverAction = new Actions(driver);

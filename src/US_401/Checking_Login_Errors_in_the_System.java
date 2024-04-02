@@ -8,9 +8,9 @@ import org.testng.Assert;
 import org.testng.annotations.DataProvider;
 import org.testng.annotations.Test;
 
-public class Checking_Login_Errors_in_the_System extends GWD{ //Tuba
+public class Checking_Login_Errors_in_the_System extends GWD{
 
-    @Test(dataProvider = "database")
+    @Test(dataProvider = "database",groups = {"Smoke Test","Login Test"})
     public void TC_0101(String username,String password){
         Elements_402 ble = new Elements_402 ();
         Tools.Wait(3);

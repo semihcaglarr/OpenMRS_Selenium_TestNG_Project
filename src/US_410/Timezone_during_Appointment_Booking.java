@@ -7,7 +7,7 @@ public class Timezone_during_Appointment_Booking extends BaseDriver {
 
 
     @Test
-    public void TC_1001() {
+    public void TC_1001(){
 
     }
 }

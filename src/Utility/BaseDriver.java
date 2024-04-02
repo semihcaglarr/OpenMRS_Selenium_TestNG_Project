@@ -4,8 +4,8 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
-import org.testng.annotations.AfterClass;
-import org.testng.annotations.BeforeClass;
+import org.testng.annotations.*;
+
 import org.testng.asserts.SoftAssert;
 
 import java.time.Duration;
@@ -19,7 +19,8 @@ public class BaseDriver {
     public static WebDriverWait wait;
 
 
-    @BeforeClass
+    @BeforeClass(groups = {"Smoke Test","Login Test",
+            "Logout Test","Regression Test","PatientManagement Test"})
     public void startUpOperations() {
 
         Logger logger = Logger.getLogger("");
@@ -86,7 +87,8 @@ public class BaseDriver {
     }
 
 
-    @AfterClass
+    @AfterClass(groups = {"Smoke Test","Login Test",
+            "Logout Test","Regression Test","PatientManagement Test"})
     public void closingOperations() {
 
         Tools.Wait(3);

@@ -5,10 +5,10 @@ import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.testng.Assert;
 import org.testng.annotations.Test;
 
-public class Patient_Listing extends BaseDriver { // Burak
+public class Patient_Listing extends BaseDriver {
 
 
-    @Test
+    @Test(groups = {"Regression Test","PatientManagement Test"})
     public void TC_0801(){
 
         Elements_408 tc08=new Elements_408();
