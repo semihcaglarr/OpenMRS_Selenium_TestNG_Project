@@ -25,7 +25,5 @@ public class Perform_Logout_from_the_System extends BaseDriver {
         String url=driver.getCurrentUrl();
         Assert.assertTrue(url.contains("login"),"Loginpage could not be reached");
 
-
-
     }
 }

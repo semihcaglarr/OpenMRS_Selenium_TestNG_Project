@@ -11,7 +11,7 @@ public class Patient_Registration extends BaseDriver {
     public static String patientMiddleNameSend = "Osman";
     public static String patientFamilyNameSend = "Tanburacı";
 
-    @Test(groups = {"Regression Test"})
+    @Test(groups = {"Regression Test","PatientManagement Test"})
     public void TC_0401() {
         Elements_404 tc04 = new Elements_404();
 

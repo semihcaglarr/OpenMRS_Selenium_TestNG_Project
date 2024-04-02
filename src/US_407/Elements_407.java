@@ -15,26 +15,24 @@ public class Elements_407 {
     public WebElement findPatientRecordButton;
 
     @FindBy(xpath = "//ul[@id='breadcrumbs']//a")
-    public WebElement homePageIcon; // bu element oluşana kadar bekle diyeceğiz
+    public WebElement homePageIcon;
 
     @FindBy(xpath = "//form[@id='patient-search-form']/input")
-    public WebElement patientSearch; // buraya ID göndermeliyiz
+    public WebElement patientSearch;
 
 
     @FindBy(xpath = "//div[@class='dataTables_info']")
-    public WebElement dataTableInfo;  // buradaki text "1 a 1 of 1" bu içerene
-    // contains olana kadar bekle
-
+    public WebElement dataTableInfo;
 
     @FindBy(xpath = "//tr[@class='odd']")
-    public WebElement resultsTable;  // buna tıkla
+    public WebElement resultsTable;
 
     @FindBy(xpath = "//span[@class='recent-lozenge']/..")
     public WebElement patientId;
 
 
     @FindBy(xpath = "//a[contains(@id,'deletePatient')]")
-    public WebElement deletePatient; // buna istinaden bekleme de koy
+    public WebElement deletePatient;
 
 
     @FindBy(xpath = "//input[@id='delete-reason']")

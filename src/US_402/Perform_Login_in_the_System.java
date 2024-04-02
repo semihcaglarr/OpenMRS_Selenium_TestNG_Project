@@ -39,7 +39,6 @@ public class Perform_Login_in_the_System extends GWD {
 
         wait1.until(ExpectedConditions.elementToBeClickable(ble.demoMRS2Button));
         ble.demoMRS2Button.click();
-        //Tools.JavaScriptClick_TUBA(ble.demoMRS2Button);
 
         wait1.until(ExpectedConditions.urlContains("login"));
 
@@ -115,8 +114,5 @@ public class Perform_Login_in_the_System extends GWD {
         wait1.until(ExpectedConditions.visibilityOf(ble.loggedMsg));
 
         Assert.assertTrue(ble.loggedMsg.getText().contains("Logged"), "Unable to Login");
-
     }
-
-
 }

@@ -11,8 +11,4 @@ public class Elements_403 {
     }
    @FindBy(xpath = "//li[@class='nav-item logout']/a")
     public WebElement logoutButton;
-
-
-
-
 }

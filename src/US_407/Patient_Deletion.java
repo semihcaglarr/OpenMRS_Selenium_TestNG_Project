@@ -30,9 +30,5 @@ public class Patient_Deletion extends BaseDriver {
         tc07.deleteReason.sendKeys("Canım Öyle İstiyor");
 
         tc07.deleteConfirm.click();
-
-
-
-
     }
 }

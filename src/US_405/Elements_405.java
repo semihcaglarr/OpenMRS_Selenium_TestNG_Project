@@ -27,17 +27,6 @@ public class Elements_405 {
 
     @FindBy(xpath = "//*[@id='cancel-button']")
     public WebElement cancelButton;
-
-
-
-
-
-
-
-
-
-
-
 }
 
 
