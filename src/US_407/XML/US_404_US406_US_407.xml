@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<suite name="My Suit">
+    <test name="test1">
+
+        <!-- hangi gruplar çalıştırılacak-->
+        <groups>
+            <run>
+                <include name="PatientManagement Test"></include>
+            </run>
+        </groups>
+
+        <!--çalışcak classların yazıldığı bölüm-->
+        <classes>
+            <class name="US_404.Patient_Registration"></class>
+            <class name="US_406.Patient_Search_in_Patient_List"></class>
+            <class name="US_407.Patient_Deletion"></class>
+        </classes>
+
+    </test>
+</suite>

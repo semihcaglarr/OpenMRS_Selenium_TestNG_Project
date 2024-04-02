@@ -24,8 +24,9 @@ public class Elements_407 {
     @FindBy(xpath = "//div[@class='dataTables_info']")
     public WebElement dataTableInfo;
 
-    @FindBy(xpath = "//tr[@class='odd']")
+    @FindBy(xpath = "(//tr[@class='odd']/td)[2]")
     public WebElement resultsTable;
+
 
     @FindBy(xpath = "//span[@class='recent-lozenge']/..")
     public WebElement patientId;

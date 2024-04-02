@@ -22,10 +22,14 @@ public class Elements_406 {
     @FindBy(xpath = "//form[@id='patient-search-form']/input")
     public WebElement patientSearch;
 
-    @FindBy(xpath = "//tr[@class='odd']")
+    @FindBy(xpath = "//tr[@class='odd']/td")
     public WebElement resultsTable;
 
+    @FindBy(xpath = "//div[@class='float-sm-right']/span")
+    public WebElement patientID;
 
+    @FindBy(xpath = "//span[contains(@class,'givenName')]")
+    public WebElement givenName;
 
 
 }
