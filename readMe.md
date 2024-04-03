@@ -21,7 +21,7 @@ The OpenMRS Project aims to implement essential functionalities within the OpenM
 ## Contributors
 | Name              | Position              | GitHub                                           |
 |-------------------|-----------------------|--------------------------------------------------|
-| Semih Caglar      | Team Lead / PO        | [sammycaglar](https://github.com/sammycaglar)    |
+| Semih Caglar      | Team Lead / PO        | [semihcaglarr](https://github.com/semihcaglarr)    |
 | Sudaba Gurbanli   | QA Automation Tester  | [Sudaba8](https://github.com/Sudaba8)            |
 | Demet Ceker       | QA Automation Tester  | [demet1334](https://github.com/demet1334)        |
 | Burak Demir       | QA Automation Tester  | [BurakDemir01](https://github.com/BurakDemir01)  |
@@ -47,7 +47,7 @@ The OpenMRS Project aims to implement essential functionalities within the OpenM
 - **Project Management Tool:** Jira
 
 ## GitHub Repositories
-- [sammycaglar](https://github.com/sammycaglar)  
+- [semihcaglarr](https://github.com/semihcaglarr)  
 - [Sudaba8](https://github.com/Sudaba8)          
 - [demet1334](https://github.com/demet1334)      
 - [BurakDemir01](https://github.com/BurakDemir01)
