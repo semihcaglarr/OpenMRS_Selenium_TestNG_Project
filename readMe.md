@@ -12,7 +12,7 @@ The OpenMRS Project aims to implement essential functionalities within the OpenM
  *US_403: Secure User Logout*                 | Sudaba Gurbanli |
  *US_404: Patient Registration*               | Okan Savas      |
  *US_405: Account Settings Management*        | Sudaba Gurbanli |
- *US_406: Patient Listing and Search*         | Demet Ceker     |
+ *US_406: Patient Listing and Search*         | Demet Saldanli  |
  *US_407: Patient Deletion*                   | Semih Caglar    |
  *US_408: List All Patients*                  | Burak Demir     |
  *US_409: Merging Patient Records*            | Erman Karatas   |
@@ -23,7 +23,7 @@ The OpenMRS Project aims to implement essential functionalities within the OpenM
 |-------------------|-----------------------|--------------------------------------------------|
 | Semih Caglar      | Team Lead / PO        | [semihcaglarr](https://github.com/semihcaglarr)    |
 | Sudaba Gurbanli   | QA Automation Tester  | [Sudaba8](https://github.com/Sudaba8)            |
-| Demet Ceker       | QA Automation Tester  | [demet1334](https://github.com/demet1334)        |
+| Demet Saldanli    | QA Automation Tester  | [demet1334](https://github.com/demet1334)        |
 | Burak Demir       | QA Automation Tester  | [BurakDemir01](https://github.com/BurakDemir01)  |
 | Tuba Aldemir      | QA Automation Tester  | [turuhsen](https://github.com/turuhsen)          |
 | Erman Karatas     | QA Automation Tester  | [ermankaratas](https://github.com/ermankaratas)  |
