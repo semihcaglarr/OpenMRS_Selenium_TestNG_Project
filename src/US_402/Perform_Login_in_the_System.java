@@ -1,11 +1,9 @@
 package US_402;
 
-import Utility.GWD;
-import Utility.Tools;
+import Utility.*;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.testng.Assert;
-import org.testng.annotations.DataProvider;
-import org.testng.annotations.Test;
+import org.testng.annotations.*;
 
 
 public class Perform_Login_in_the_System extends GWD {

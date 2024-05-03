@@ -2,7 +2,6 @@ package US_406;
 
 import US_404.Patient_Registration;
 import Utility.BaseDriver;
-import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.testng.Assert;
 import org.testng.annotations.Test;

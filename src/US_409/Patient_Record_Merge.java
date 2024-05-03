@@ -1,15 +1,11 @@
 package US_409;
 
-import Utility.BaseDriver;
-import Utility.Tools;
+import Utility.*;
 import org.openqa.selenium.Keys;
 import org.openqa.selenium.interactions.Actions;
-import org.openqa.selenium.support.ui.ExpectedConditions;
-import org.openqa.selenium.support.ui.Select;
+import org.openqa.selenium.support.ui.*;
 import org.testng.Assert;
 import org.testng.annotations.Test;
-
-import java.util.UUID;
 
 public class Patient_Record_Merge extends BaseDriver {
      @Test(groups = {"Regression Test","PatientManagement Test"})
