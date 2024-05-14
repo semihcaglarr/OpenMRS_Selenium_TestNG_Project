@@ -1,9 +1,9 @@
 <component name="libraryTable">
   <library name="slf4j.nop" type="repository">
-    <properties maven-id="org.slf4j:slf4j-nop:1.7.30" />
+    <properties maven-id="org.slf4j:slf4j-nop:2.0.13" />
     <CLASSES>
-      <root url="jar://$MAVEN_REPOSITORY$/org/slf4j/slf4j-nop/1.7.30/slf4j-nop-1.7.30.jar!/" />
-      <root url="jar://$MAVEN_REPOSITORY$/org/slf4j/slf4j-api/1.7.30/slf4j-api-1.7.30.jar!/" />
+      <root url="jar://$MAVEN_REPOSITORY$/org/slf4j/slf4j-nop/2.0.13/slf4j-nop-2.0.13.jar!/" />
+      <root url="jar://$MAVEN_REPOSITORY$/org/slf4j/slf4j-api/2.0.13/slf4j-api-2.0.13.jar!/" />
     </CLASSES>
     <JAVADOC />
     <SOURCES />

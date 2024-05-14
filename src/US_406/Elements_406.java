@@ -4,8 +4,6 @@ import Utility.BaseDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.*;
 
-import java.util.List;
-
 public class Elements_406 {
 
     public Elements_406() {

@@ -5,8 +5,7 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.*;
 import org.openqa.selenium.support.ui.*;
 
-import java.util.List;
-import java.util.UUID;
+import java.util.*;
 
 import static Utility.BaseDriver.wait;
 
